@@ -1,6 +1,6 @@
 #
-# Name
-# Date
+# Wynn Officer
+# 2/20/2025
 # Areas of Rectangles Programming Project
 # COSC 1010
 #
