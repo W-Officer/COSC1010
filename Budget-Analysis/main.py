@@ -13,10 +13,11 @@ totalExpenses = 0.0
 budget = int(input('Input budget for this month: '))
 
 #expenses for the month
-for week in range(1,5):
-    print('Expenses for the week: ', week)
-    expenses = int(input())
-    totalExpenses += expenses
+while True:
+        expense = float(input("Enter expense amount (or '0' to finish): "))
+        if expense == 0:
+            break  # Exit loop if user enters 0
+        totalExpenses += expense
 
 #Displaying the total amount of budget is left
 if totalExpenses > budget:
@@ -25,6 +26,5 @@ elif budget > totalExpenses:
     print('Budget have exeeded expense by: $', format(budget - totalExpenses,'.2f'))
 else:
     print('Budget and expenses are equal.')
-
 
 # Use comments liberally throughout the program. 
